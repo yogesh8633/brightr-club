@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "brightr-club",
+  "private_key_id": "31e95a6f5fb14d0cecde57fd05377da1cfa3e241",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEugIBADANBgkqhkiG9w0BAQEFAASCBKQwggSgAgEAAoIBAQCoxhWLEJN7FiD5\nQhbOuwyB0MsQbk2BDr+Yt3bOz0zlC3VYNRzXhSWVNk01rk6PZ29vGyDaWGgdnZyR\ncWhaCmVFcYR9Uyf7zpLf5uV8k8c11/XoMmT1EbQ9Bk7LT25q1Ay0kwUdSmMgW12v\ny4VlRsgPOt7/kXr6j1oGuTOeVATQD2oJNb7+D9chB8kA8MmJqIZ5IH8s8zb1d7uv\njAMX4ulEj0eRZg3CeT5bqv0eDBNEC5a3dZ3mFlTZF5PxkwxPyF5rj2snyYtBnVSD\njd1kg/h8OgCPSrr53HuMe4zGbrkpRBNDxnaTjAZyIcDnytI8pLqd/vvFpArh6XFp\nFDWe0Z5tAgMBAAECgf9e+o8COZ1/27QywIRmx0W8yI9P+31Q72pjjQpVNXcWbvlx\n6nHt16kaeFeSY/Q6y13ZRhPIb735eFZvyRcCIJ1dWiIBCDmsgYK9uJYEaILQcw/e\n3E7RhJOeZv/N03cnbTnQfHgNFT5K/R/wguQJWq7qEcjV54NfRCo9Bx+LRiXjkvZg\nVWUfGo/gpWzpDLuojjsar7ukwTHsdMm7tlj2OCHI2ydWuhK9BNXspXTTto6Abf3U\n/7yrBQ8OV2va/A/RD/cWFRpC5O6t2RtKjirJcVIDPntvBL5lxN/L4IKkqHCK6K18\n5kfYKKZGmavI9KetMgCbsZgkpuRF7KFqUa/pzgkCgYEA1My9TdtJx3smYW1Rx0Ac\nlQqu+C2cAJOksyZB7fg2cWMllQDwvzP50YSAwq/rU1W8XwRmdG46QBap6U7U5Hya\np6SG5jJNAgVHoHNnouks5WAPPMs33W9mNVcA33aq9PbrZfztnKhlNcGrzkSfg5QE\nNis/FkeWfJ5BVf/ksQ2Zy4UCgYEAywlNReH1RKA4VwodPV0vk9u13XsaHTqA4LQE\nHQ2LGvKtsbvC4ZRFTQmEQZXZJu9DPD4ADnob+IRU/cLvaShKkrEkDKWxA/TMp3+G\nntYC19LVrtA6c1DuYXk+M2TeowHe+BdrS17hmzb7t2UIrtKR++R9ECVf1q+7BFAd\nhqh+d8kCgYBghv7X8kDlW9dtGkmeOFa+xLnZmdbJ7C8plJETgSQxCuhhTqvmD42i\nnJhLt8DnbFymPTi8V8PUjnNEgZ3QhzUgFmGayfZklECJZ8/69gqHgatnyEbvCzkx\nuOWMeCfUNq1Q9gpSpZBDcjacukQhS2Mdr0BOuupoXOEGQa1bIvBAgQKBgCdesmEu\no4SfHM2j5G+VtjgRjn5X9IReZ8cqoPGRQrwC+rNQGUXsnlOF2ONuzyDBnGP+Eby8\n6NeTsXdTaWEWsv8m4jqhlmWR/m0sSUpbbUm0VEMFlY/uzYqRHAKTOKibIEUzJVcE\nGvMiAkVZjgl4Q154u9d5p8/VW4pGjrMh0QQhAoGAWQX8DqRKTfmHQCoCsw9f4/j5\ndmc9a2+C9pvIDJOv0tOd0muLBGsjsCYrRS4jWAfTmp2xnEd/dveapXFsMS/gVz7H\nvCssDDid+4G5ZehTKPiWg3bjUonaKP0Q4dn+51VhqH4KnMXMDKyLAHvonySfMccz\nf9rOcjY5IP5yccZGEz8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "getdata@brightr-club.iam.gserviceaccount.com",
+  "client_id": "100929023604277645902",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/getdata%40brightr-club.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

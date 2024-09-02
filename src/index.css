@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Root styles */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+/* Light mode specific styles */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+
+
+.slick-next:before {
+  content: none;
+
+}
+.slick-prev:before {
+  content: none;
+  
+}
+.slick-next{
+ &:hover{
+  background-color: white !important;
+ }
+}
+.slick-prev{
+  &:hover{
+    background-color: white !important;
+   }
+}
+
+
+.item:hover .item__counter {
+  transform: translateX(60%) ;
+  z-index: -1;
+  transition: ease-out 1s ;
+}
+/* 
+.item:hover img {
+  filter: saturate(100%);
+} */
+
+/* .item:hover {
+  z-index: 0;
+} */
+ .number{
+  font-size: 9rem;
+  -webkit-text-stroke: 0.4vmin;
+ -webkit-text-stroke-color: white;
+ }
+
+ .jua-regular {
+  font-family: "Jua", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
