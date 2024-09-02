@@ -2,6 +2,7 @@ const express = require("express");
 const { google } = require("googleapis");
 const fs = require("fs");
 const cors = require("cors");
+require('dotenv').config();
 
 const app = express();
 const port = 3000;
@@ -17,8 +18,9 @@ app.use(
 
 // Load the credentials JSON file
 const credentials = JSON.parse(
-  fs.readFileSync("./brightr-club-31e95a6f5fb1.json")
+  fs.readFileSync(process.env.GOOGLE_CREDENTIALS)
 );
+
 
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
 
@@ -30,7 +32,7 @@ const auth = new google.auth.GoogleAuth({
 const sheets = google.sheets({ version: "v4", auth });
 
 // Replace with your actual Google Sheet ID and range
-const SPREADSHEET_ID = "1WZCSjGrk7wQzBZ5HXTK8CGPaugaMTHmhnC6KhqJS2VI";
+const SPREADSHEET_ID = process.env.SPREADSHEET_ID;
 const RANGE = "New List!A:Z"; // Adjust the range based on your columns
 
 app.get("/api/data", async (req, res) => {

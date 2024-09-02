@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import SimpleBookItem from "../SimpleBookItem/SimpleBookItem";
 import axios from "axios";
 import { RightOutlined, LeftOutlined } from "@ant-design/icons";
+import { Spin } from "antd";
 
 const CustomArrow = ({ className, onClick, direction }) => (
   <div
@@ -24,6 +25,8 @@ const CustomArrow = ({ className, onClick, direction }) => (
 
 const BookSliderNew = ({ title }) => {
   const [books, setBooks] = useState([]);
+  const [loading, setLoading] = useState(true); // Add a loading state
+
   useEffect(() => {
     console.log("Fetching books for title:", title); // Debugging
   
@@ -37,6 +40,8 @@ const BookSliderNew = ({ title }) => {
         setBooks(response.data);
       } catch (error) {
         console.error("Error fetching books:", error);
+      } finally {
+        setLoading(false); // Set loading to false after fetching data
       }
     };
   
@@ -92,19 +97,26 @@ const BookSliderNew = ({ title }) => {
       },
     ],
   };
-
   return (
-    <>
+    <div className="relative">
       {title && <h2 className="text-2xl font-semibold mt-5">{title}</h2>}
-      <Slider {...settings} className="py-4  ">
-        {books.length > 0 &&
-          books.map((book, index) => (
-            <div key={index} className="px-2">
-              <SimpleBookItem book={book} />
-            </div>
-          ))}
-      </Slider>
-    </>
+      {loading ? (
+        <div className="flex items-center justify-center w-full h-[400px]">
+          <Spin size="large" />
+        </div>
+      ) : (
+        <>
+          <Slider {...settings} className="py-4">
+            {books.length > 0 &&
+              books.map((book, index) => (
+                <div key={index} className="px-2">
+                  <SimpleBookItem book={book} />
+                </div>
+              ))}
+          </Slider>
+        </>
+      )}
+    </div>
   );
 };
 
